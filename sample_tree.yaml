@@ -1,0 +1,9 @@
+value: 10
+children:
+  - value: 5
+    children:
+      - value: 3
+      - value: 7
+  - value: 15
+    children:
+      - value: 18
