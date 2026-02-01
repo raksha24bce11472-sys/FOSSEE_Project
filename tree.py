@@ -6,6 +6,7 @@ like adding nodes, traversing, and loading from YAML configuration.
 """
 
 import yaml
+from collections import deque
 from typing import List, Optional, Any, Dict
 
 
@@ -157,10 +158,10 @@ class Tree:
             return []
         
         result = []
-        queue = [self.root]
+        queue = deque([self.root])
         
         while queue:
-            node = queue.pop(0)
+            node = queue.popleft()
             result.append(node)
             queue.extend(node.children)
         
