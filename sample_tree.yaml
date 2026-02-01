@@ -1,0 +1,48 @@
+# Sample Tree Configuration File
+# This YAML file defines a hierarchical tree structure
+
+name: root
+value: File System
+children:
+  - name: home
+    value: /home
+    children:
+      - name: user
+        value: /home/user
+        children:
+          - name: documents
+            value: /home/user/documents
+            children:
+              - name: report.pdf
+                value: report.pdf
+              - name: notes.txt
+                value: notes.txt
+          - name: downloads
+            value: /home/user/downloads
+            children:
+              - name: image.png
+                value: image.png
+          - name: projects
+            value: /home/user/projects
+            children:
+              - name: project1
+                value: project1
+              - name: project2
+                value: project2
+  - name: var
+    value: /var
+    children:
+      - name: log
+        value: /var/log
+        children:
+          - name: syslog
+            value: syslog
+          - name: auth.log
+            value: auth.log
+      - name: tmp
+        value: /var/tmp
+  - name: etc
+    value: /etc
+    children:
+      - name: config
+        value: /etc/config

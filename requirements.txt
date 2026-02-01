@@ -1,0 +1,8 @@
+# Python Dependencies for Tree Project
+
+# YAML parsing
+PyYAML==6.0.1
+
+# Testing framework
+pytest==7.4.3
+pytest-cov==4.1.0
